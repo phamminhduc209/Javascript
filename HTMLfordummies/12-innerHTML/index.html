@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML property</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Word</h1>
+    <!-- 
+        - Sử dụng getElementsByTagName() để lấy ra danh sách các <p> có class là 'foo'
+        - Lặp qua các phần tử và thay đổi nội dung của từng phần tử bằng cách append (thêm vào cuối) một đường link tới coders.tokyo site
+    -->
+    <div id="container">
+        <p class="foo">Foo 1</p>
+        <p class="foo">Foo 2</p>
+        <p>Foo 3</p>
+        <p class="foo">Foo 4</p>
+        <p>Foo 5</p>
+        <p class="foo">Foo 6</p>
+        <p>Foo 7</p>
+        <p class="foo">Foo 8</p>
+        <p>Foo 9</p>
+        <p class="foo">Foo 10</p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName('foo');
+            
+        }
+    </script>
+</body>
+</html>

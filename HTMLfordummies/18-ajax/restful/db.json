@@ -1,0 +1,24 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Duc",
+      "last_name": "Pham"
+    },
+    {
+      "id": 3,
+      "first_name": "Trang",
+      "last_name": "Tran"
+    },
+    {
+      "id": 4,
+      "first_name": "Trinh",
+      "last_name": "Tran"
+    },
+    {
+      "first_name": "Chi",
+      "last_name": "Tran",
+      "id": 5
+    }
+  ]
+}

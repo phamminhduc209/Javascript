@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+</head>
+<body>
+    <h2>
+        Tạo 1 button mới nằm dưới p<br>
+        Viết code sao cho khi click button đó thì giá trị biến `count` tăng 1 đơn vị và nội dung của `counter` cũng thay đổi theo`
+    </h2>
+    <p id="count"></p>
+    <button type="button" onClick="clickCount()">Click me</button>
+    
+    <h2>
+        Viết code sao cho khi ấn vào nút `Clear`, chữ trong input sẽ bị xoá<br>
+        Kiểm tra bằng cách gõ chữ vào ô tìm kiếm vào ấn `Clear`
+    </h2>
+    <input type="text" id="searchBox" placeholder="Search..." />
+    <button>Search</button>
+    <button onClick="clearText()">Clear</button>
+
+    <h2>Viết code sao cho khi nhập tên ai đó vào ô input, click vào nút Say Hi! sẽ hiển thị ra alert box với nội dung: Hi kèm theo tên người đó. Ví dụ: Hi Coders.Tokyo</h2>
+    <input type="text" id="name">
+    <button type="submit" id="SayHi" onClick="sayHi()">Say Hi!</button>
+
+    <script>
+        var count = 0;
+        var counter = document.getElementById('count');
+        counter.innerHTML = count;
+
+        function clickCount() {
+          count += 1;
+          document.getElementById("count").innerHTML = count;
+        }
+
+        function clearText() {
+            document.getElementById('searchBox').value = '';
+        }
+
+        function sayHi() {
+            var result = document.getElementById('name').value;
+            alert('Hi ' + result);
+        }
+    </script>
+</body>
+</html>
